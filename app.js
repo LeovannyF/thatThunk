@@ -22,6 +22,7 @@ app.post('/api/products', (req, res, next) => {
 app.delete('/api/products/:id', (req, res, next) => {
   Product.findById(req.params.id)
   .then(product => product.destroy())
+  .then(() => res.sendStatus(204)) // standard practice to send this status 
   .catch(next)
 })
 

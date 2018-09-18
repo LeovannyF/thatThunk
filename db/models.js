@@ -3,16 +3,14 @@ const db = new Sequelize(process.env.DATABASE || 'postgres://localhost:5432/that
 const {products} = require ('./seed');
 
 const Product = db.define('product', {
-  ProductName: {
+  productName: {
     type: Sequelize.STRING,
-    allowNull: false,
-    unique: true,
-    logging: false
+    unique: true
 
   },
   rating: {
-    type: Sequelize.INTEGER,
-      logging: false
+    type: Sequelize.INTEGER
+
   }
 })
 

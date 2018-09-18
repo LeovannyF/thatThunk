@@ -1,4 +1,4 @@
-const products = [ {ProductName:'shoes', rating: 1}, {ProductName:'belt', rating:2 }, {ProductName:'shirts', rating: 3}, {ProductName:'cups', rating: 4}]
+const products = [ {productName:'shoes', rating: 1}, {productName:'belt', rating:2 }, {productName:'shirts', rating: 3}, {productName:'cups', rating: 4}]
 
 module.exports = {
   products

@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import store, {loadProducts} from "../store";
 import ProductList from './ProductList';
-import {Provider} from 'react-redux'
-
+import CreateProduct from './CreateProduct';
+import {Provider} from 'react-redux';
 
 
 class App extends Component {
@@ -13,6 +13,7 @@ class App extends Component {
     return (
       <Provider store={store}>
       <div>
+        <CreateProduct />
         <ProductList />
       </div>
       </Provider>
